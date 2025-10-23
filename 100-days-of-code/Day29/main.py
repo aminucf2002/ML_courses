@@ -1,6 +1,4 @@
 from tkinter import *
-from PIL import ImageTk, Image
-
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
 
 # ---------------------------- SAVE PASSWORD ------------------------------- #
@@ -9,8 +7,7 @@ from PIL import ImageTk, Image
 window = Tk()
 window.title("Password Manager")
 canvas = Canvas(height=200, width=200)
-img = Image.open("logo.png")
-logo_img = ImageTk.PhotoImage(img)
+logo_img = PhotoImage(file="logo.png")
 canvas.create_image(100, 100,image=logo_img)
 window.config(padx=50, pady=50)
 
